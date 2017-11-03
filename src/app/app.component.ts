@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Hello World zaaaaaaaaaaaaaaaaaaaaa!';
   username = '';
+
+  addUsername(username: string){
+    console.log(username);
+  }
 }
