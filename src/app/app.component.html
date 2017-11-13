@@ -1,19 +1,21 @@
+<app-navigation>
+
+</app-navigation>
+
+<ul class="list-group">
+  <li class="list-group-item" >{{count}}</li>
+
+  <li class="list-group-item" *ngFor="let item of userList">{{item.name}}</li>
 
 
-  <app-navigation></app-navigation>
-
-  <div class="list-group">
-      <a href="#" class="list-group-item list-group-item-action">First item</a>
-      <a href="#" class="list-group-item list-group-item-action">Second item</a>
-      <a href="#" class="list-group-item list-group-item-action">Third item</a>
-    </div>
+</ul>
 
 
 <div class="row">
   <div class="row">
     <div class="col-sm-12">
-    <div class="col-sm-1"> Username : </div>
-    <div class="col-sm-2"><input type="text" [(ngModel)]="username"></div>
+      <div class="col-sm-1"> Username : </div>
+      <div class="col-sm-2"><input type="text" [(ngModel)]="username"></div>
     </div>
   </div>
   <div class="row">
@@ -22,11 +24,9 @@
 </div>
 <div>
   <div class=row></div>
-  </div>
-  <div class="row">
-      <div class="col-sm-1"></div>
+</div>
+<div class="row">
+  <div class="col-sm-1"></div>
 
-      <div class="col-sm-1"><button style="margin-top:10px" class="btn btn-success" (click)="addUsername(username)"> Add User </button></div>
-    </div>
-
-
+  <div class="col-sm-1"><button style="margin-top:10px" class="btn btn-success" (click)="addUsername(username)"> Add User </button></div>
+</div>
